@@ -1,0 +1,30 @@
+@use 'variables' as c;
+
+.ButtonDeMando {
+  background-color: c.$color1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 249, 240);
+  font-size: 30px;
+
+  &button_Box {
+
+    position: relative;
+  }
+
+  &box__shadow {
+    width: 60px;
+    height: 60px;
+    background-color: c.$color3;
+    position: absolute;
+    top: 5px;
+
+  }
+
+  &:active {
+    transform: translateY(10px);
+  }
+}
